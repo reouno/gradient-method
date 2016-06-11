@@ -12,7 +12,7 @@ main = do
     let a = (1)
     putStrLn $ "Initial value:  a = " ++ (show a)
     let minValue = find_min f a (differential f a)
-    putStrLn $ "Minimum value:  min = " ++ (show minValue)
+    putStrLn $ "Local minimum value:  min = " ++ (show minValue)
     putStrLn "\n\n----------------微分の例（勾配を求める例）----------------\n"
     putStrLn $ "f(x)の、a = 1 における勾配は、f'(a) = " ++ (show $ differential f 1)
     putStrLn $ "f(x)の、a = -1 における勾配は、f'(a) = " ++ (show $ differential f (-1))
