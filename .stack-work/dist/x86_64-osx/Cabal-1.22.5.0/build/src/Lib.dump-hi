@@ -1,21 +1,17 @@
 
 ==================== FINAL INTERFACE ====================
-2016-06-11 08:23:47.520336 UTC
+2016-06-11 10:03:56.149065 UTC
 
 interface Gradi_AasgltDGnmiDJo17XAkAMY:Lib 7103
-  interface hash: 3b7199957b1c79ce77866fa15f4379c5
-  ABI hash: 5b9da5fb27c97fcd71bc9fd92ef03f19
-  export-list hash: a95f67486b4a0203d1126bb34ede6455
+  interface hash: d5a27a8fda707a7f606cb1ce4bc14c94
+  ABI hash: c690bde95fde784208ab2cb85e4f8055
+  export-list hash: 1e51e1ca10f94a1b3ad5308e659c77d6
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 4c0a7b65a6dddbc4161c2e2bfabe3dc3
   sig of: Nothing
   used TH splices: False
   where
 exports:
-  Lib.differential
-  Lib.epsilon
-  Lib.find_min
-  Lib.h
 module dependencies:
 package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
                       integer-gmp-1.0.0.0
@@ -27,43 +23,6 @@ import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
 import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
 import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
-cbf5d9d5ff4933c2c43913bd10357b50
-  $wfind_min ::
-    (GHC.Types.Double -> GHC.Types.Double)
-    -> GHC.Prim.Double# -> GHC.Prim.Double#
-  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U(U))><L,U>,
-     Inline: [0] -}
-2685add55e7f7cece6915f8f4eea4a6e
-  differential ::
-    (GHC.Types.Double -> GHC.Types.Double)
-    -> GHC.Types.Double -> GHC.Types.Double
-  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U(U))><L,U(U)>m,
-     Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: GHC.Types.Double -> GHC.Types.Double
-                   w1 :: GHC.Types.Double ->
-                 case w (case w1 of wild { GHC.Types.D# x ->
-                         GHC.Types.D# (GHC.Prim.+## x 1.0e-5) }) of wild { GHC.Types.D# x ->
-                 case w w1 of wild1 { GHC.Types.D# y ->
-                 GHC.Types.D# (GHC.Prim./## (GHC.Prim.-## x y) 1.0e-5) } }) -}
-012aa7fed61641342fe9bd02ff96e8da
-  epsilon :: GHC.Types.Double
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 1.0e-5) -}
-fb62ce5c45a920af7d489111c7c61d61
-  find_min ::
-    (GHC.Types.Double -> GHC.Types.Double)
-    -> GHC.Types.Double -> GHC.Types.Double
-  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),C(U(U))><S,U(U)>m,
-     Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: GHC.Types.Double -> GHC.Types.Double
-                   w1 :: GHC.Types.Double ->
-                 case w1 of ww { GHC.Types.D# ww1 ->
-                 case Lib.$wfind_min w ww1 of ww2 { DEFAULT ->
-                 GHC.Types.D# ww2 } }) -}
-b87b739e48ce4e46d5ee700e8ccf5d3c
-  h :: GHC.Types.Double
-  {- Strictness: m, Unfolding: (Lib.epsilon) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
