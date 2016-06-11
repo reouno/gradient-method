@@ -6,20 +6,20 @@ main :: IO ()
 main = do
     putStrLn "----------------Gradient method（勾配法）----------------\n"
     putStrLn "This program is sample of \"Gradient method\"."
-    putStrLn "This sample of method is for function of one variable."
+    putStrLn "This sample is for function of one variable."
     let f x = x^2
     putStrLn "Function:  f(x) = x^2"
-    let a = (-10)
+    let a = (1)
     putStrLn $ "Initial value:  a = " ++ (show a)
     let minValue = find_min f a (differential f a)
     putStrLn $ "Minimum value:  min = " ++ (show minValue)
     putStrLn "\n\n----------------微分の例（勾配を求める例）----------------\n"
-    putStrLn $ "f(x)の、a = 1 における勾配（f'(x)）は、f'(a) = " ++ (show $ differential f 1)
-    putStrLn $ "f(x)の、a = -1 における勾配（f'(x)）は、f'(a) = " ++ (show $ differential f (-1))
-    putStrLn $ "f(x)の、a = 20 における勾配（f'(x)）は、f'(a) = " ++ (show $ differential f 20)
+    putStrLn $ "f(x)の、a = 1 における勾配は、f'(a) = " ++ (show $ differential f 1)
+    putStrLn $ "f(x)の、a = -1 における勾配は、f'(a) = " ++ (show $ differential f (-1))
+    putStrLn $ "f(x)の、a = 20 における勾配は、f'(a) = " ++ (show $ differential f 20)
 
 
--- 微分するときにxに与える微小変化
+-- 微分係数を計算するときにxに与える微小変化
 h :: Double
 h = 0.00001
 
@@ -38,6 +38,6 @@ find_min f a g =
         a' = a - epsilon * g
         g' = differential f a'
     in
-        if g * g' < 0
+        if g * g' <= 0
             then a
             else find_min f a' g
