@@ -7,12 +7,13 @@ main = do
     putStrLn "----------------Gradient method（勾配法）----------------\n"
     putStrLn "This program is sample of \"Gradient method\"."
     putStrLn "This sample is for function of one variable."
-    let f x = x^2
+    let f x = x * x
     putStrLn "Function:  f(x) = x^2"
     let a = (1)
     putStrLn $ "Initial value:  a = " ++ (show a)
     let minValue = find_min f a (differential f a)
     putStrLn $ "Local minimum value:  min = " ++ (show minValue)
+    putStrLn $ "f(x):  f(min) = " ++ (show $ f minValue)
     putStrLn "\n\n----------------微分の例（勾配を求める例）----------------\n"
     putStrLn $ "f(x)の、a = 1 における勾配は、f'(a) = " ++ (show $ differential f 1)
     putStrLn $ "f(x)の、a = -1 における勾配は、f'(a) = " ++ (show $ differential f (-1))

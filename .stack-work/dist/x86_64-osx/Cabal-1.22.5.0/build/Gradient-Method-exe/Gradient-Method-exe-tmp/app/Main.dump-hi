@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-06-11 10:27:11.558316 UTC
+2016-06-11 11:25:50.272368 UTC
 
 interface main@main:Main 7103
-  interface hash: 1674be96622f5560e73eb1ffac1fef94
-  ABI hash: d4d68e97a660f1623f406b0e47cf93c5
+  interface hash: 1a232f25b8d98647cf36128f31af78fb
+  ABI hash: 64173d41583704516627acd481dcee96
   export-list hash: fe43d27c1d12f408ac82e9ffacd38439
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: faa5ca58b5b2f79011c4c266ae811f5f
@@ -72,12 +72,12 @@ b81c93bd49ae41fdd239187383e62e35
 eb85f35cdcedb82964d2bb37918230d4
   h :: GHC.Types.Double
   {- Strictness: m, Unfolding: (Main.epsilon) -}
-8ccd9f490809d5898d8e6d635d4ed372
+c946caa3f0ecc45293c1d031cb5d0b03
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-0e871f809912fa75c94d732c6566230d
+d129924577553a35390972ac2fcab378
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -85,54 +85,59 @@ eb85f35cdcedb82964d2bb37918230d4
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main24
+                        Main.main26
                         GHC.Types.True
                         s of ds1 { (#,#) ipv ipv1 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main23
+                        Main.main25
                         GHC.Types.True
                         ipv of ds2 { (#,#) ipv2 ipv3 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main22
+                        Main.main24
                         GHC.Types.True
                         ipv2 of ds3 { (#,#) ipv4 ipv5 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main21
+                        Main.main23
                         GHC.Types.True
                         ipv4 of ds4 { (#,#) ipv6 ipv7 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main18
+                        Main.main20
                         GHC.Types.True
                         ipv6 of ds5 { (#,#) ipv8 ipv9 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main15
+                        Main.main18
                         GHC.Types.True
                         ipv8 of ds6 { (#,#) ipv10 ipv11 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main14
+                        Main.main15
                         GHC.Types.True
                         ipv10 of ds7 { (#,#) ipv12 ipv13 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main10
+                        Main.main14
                         GHC.Types.True
                         ipv12 of ds8 { (#,#) ipv14 ipv15 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main6
+                        Main.main10
                         GHC.Types.True
                         ipv14 of ds9 { (#,#) ipv16 ipv17 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main6
+                        GHC.Types.True
+                        ipv16 of ds10 { (#,#) ipv18 ipv19 ->
                  GHC.IO.Handle.Text.hPutStr2
                    GHC.IO.Handle.FD.stdout
                    Main.main2
                    GHC.Types.True
-                   ipv16 } } } } } } } } }) -}
+                   ipv18 } } } } } } } } } }) -}
 00a58789c595caf66701e641b84b2869
   main10 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Base.++
@@ -158,65 +163,75 @@ eb85f35cdcedb82964d2bb37918230d4
                    "\n\
                    \\n\
                    \----------------\\229\\190\\174\\229\\136\\134\\227\\129\\174\\228\\190\\139\\239\\188\\136\\229\\139\\190\\233\\133\\141\\227\\130\\146\\230\\177\\130\\227\\130\\129\\227\\130\\139\\228\\190\\139\\239\\188\\137----------------\n"#) -}
-ff0537afc4961fb54de994e13e69c944
+e4d0e3e4d5f80adb0e8cbe6c18dda636
   main15 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
-                   "Local minimum value:  min = "#
+                   "f(x):  f(min) = "#
                    Main.main16) -}
-77a7f1113eff8ec89f2fa13a1327d474
+f41c0c79293de765b4097f47bbea43d9
   main16 :: [GHC.Types.Char]
-  {- Unfolding: (case Main.$wfind_min
-                        Main.main17
-                        1.0
-                        2.00001000001393 of ww { DEFAULT ->
+  {- Unfolding: (case Main.main_minValue of wild { GHC.Types.D# x ->
                  GHC.Float.$w$sshowSignedFloat
                    GHC.Float.$fShowDouble_$sshowFloat
                    GHC.Show.shows18
-                   ww
+                   (GHC.Prim.*## x x)
                    (GHC.Types.[] @ GHC.Types.Char) }) -}
 7bae65f7928a05a08381e5725e817bbb
   main17 :: GHC.Types.Double -> GHC.Types.Double
   {- Arity: 1, HasNoCafRefs,
      Unfolding: (\ x :: GHC.Types.Double ->
                  GHC.Float.timesDouble x x) -}
-3514735ce24d3e53a6afc445ca78cbba
+60f3f464d414d85ab0814e8474825099
   main18 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
-                   "Initial value:  a = "#
+                   "Local minimum value:  min = "#
                    Main.main19) -}
-9cd1b1a778e8e411f7a815aec704c67c
-  main19 :: GHC.Base.String
-  {- Unfolding: (Main.main20 (GHC.Types.[] @ GHC.Types.Char)) -}
+9df466bcdcbdf6f9579c7af3fb32e479
+  main19 :: [GHC.Types.Char]
+  {- Unfolding: (case Main.main_minValue of ww { GHC.Types.D# ww1 ->
+                 GHC.Float.$w$sshowSignedFloat
+                   GHC.Float.$fShowDouble_$sshowFloat
+                   GHC.Show.shows18
+                   ww1
+                   (GHC.Types.[] @ GHC.Types.Char) }) -}
 177a191f860fa04694f3a2cc4daad523
   main2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
                    Main.main5
                    Main.main3) -}
-9c85b5f39320a325a0f6260f8d291c4b
-  main20 :: GHC.Show.ShowS
+d8e25118eb6e020380d01be3e590f903
+  main20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Initial value:  a = "#
+                   Main.main21) -}
+8b5809d6b312782380d3e918e72c23ff
+  main21 :: GHC.Base.String
+  {- Unfolding: (Main.main22 (GHC.Types.[] @ GHC.Types.Char)) -}
+84fd8c559053543bdfa93326ab211da1
+  main22 :: GHC.Show.ShowS
   {- Unfolding: (GHC.Float.$w$sshowSignedFloat
                    GHC.Float.$fShowDouble_$sshowFloat
                    GHC.Show.shows18
                    1.0) -}
-6057abc73b56fab89643341f382e1625
-  main21 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "Function:  f(x) = x^2"#) -}
-05ef93acd5bc802405f74ef2fe598fad
-  main22 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "This sample is for function of one variable."#) -}
-d37ec9e7bf1d7c69e713e3c96b4ccda4
+81798ab07ddb0626fa5ffde4a70a4d88
   main23 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
-                   "This program is sample of \"Gradient method\"."#) -}
-90da3db139a8fb06ee298b23b3f27209
+                   "Function:  f(x) = x^2"#) -}
+efe99acff99449a1803145eb87f91329
   main24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "This sample is for function of one variable."#) -}
+db362675a64c7d121ba79920942b1d54
+  main25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "This program is sample of \"Gradient method\"."#) -}
+57b5fd173f209a9c8a893788e2f25fc1
+  main26 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCStringUtf8#
                    "----------------Gradient method\\239\\188\\136\\229\\139\\190\\233\\133\\141\\230\\179\\149\\239\\188\\137----------------\n"#) -}
-383f8c09dbd1493bd799e4b2fafdda92
-  main25 ::
+614c973059277cc7ae03fa0f892e68cc
+  main27 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
@@ -255,6 +270,13 @@ fde9f0d8a56297d943adcc0d086f0294
   main9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCStringUtf8#
                    "f(x)\\227\\129\\174\\227\\128\\129a = -1 \\227\\129\\171\\227\\129\\138\\227\\129\\145\\227\\130\\139\\229\\139\\190\\233\\133\\141\\227\\129\\175\\227\\128\\129f'(a) = "#) -}
+304ea000a82cdbb6505880407cd0f798
+  main_minValue :: GHC.Types.Double
+  {- Unfolding: (case Main.$wfind_min
+                        Main.main17
+                        1.0
+                        2.00001000001393 of ww { DEFAULT ->
+                 GHC.Types.D# ww }) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
